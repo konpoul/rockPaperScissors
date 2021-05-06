@@ -21,7 +21,7 @@ const init = function () {
   round_span.textContent = score;
   for (let i = 0; i < 3; i++) points_div.children[i].style.color = "";
   for (let i = 0; i < 3; i++) points_div2.children[i].style.color = "";
-  questionmarkImage.src = `questionmark-.png`;
+  questionmarkImage.src = `questionmark.png`;
 };
 
 // Computer's pick functionality
