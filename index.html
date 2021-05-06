@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="syle.css" />
+    <title>Rock Paper Scissors Game</title>
+  </head>
+  <body>
+    <h1 class="round">Round <span class="roundCount">0</span></h1>
+    <main>
+      <section class="player player-0">
+        <h2 class="score">points</h2>
+        <div class="points points-0">
+          <i class="fas fa-heart"></i> <i class="fas fa-heart"></i>
+          <i class="fas fa-heart"></i>
+        </div>
+        <h3 class="pick-text">make a pick!</h3>
+        <div class="picks">
+          <div class="pick-item" id="rock">
+            <img class="img-pick" src="choice-0.png" alt="" />
+          </div>
+          <div class="pick-item" id="paper">
+            <img class="img-pick" src="choice-1.png" alt="" />
+          </div>
+          <div class="pick-item" id="scissors">
+            <img class="img-pick" src="choice-2.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="player player-1">
+        <h2 class="score">points</h2>
+        <div class="points points-1">
+          <i class="fas fa-heart"></i> <i class="fas fa-heart"></i>
+          <i class="fas fa-heart"></i>
+        </div>
+        <h3 class="pick-text">opponent's pick!</h3>
+        <div class="question">
+          <img class="quest" src="questionmark.png" alt="" />
+        </div>
+      </section>
+    </main>
+    <p class="end-game-message hidden">dad</p>
+    <button class="btn">Play again</button>
+    <script
+      src="https://kit.fontawesome.com/092ef9d08b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

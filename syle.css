@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* (62.5/100)*16 --> 16 are the default pixels. 
+  Used it for easier calculations */
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  background-image: linear-gradient(to top left, #6cdefa 0%, #1d5486 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  position: relative;
+  width: 100rem;
+  height: 80rem;
+  border-radius: 11px;
+  overflow: hidden;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 10px;
+}
+
+img {
+  width: 15rem;
+  height: 15rem;
+  cursor: pointer;
+}
+
+/* Sections for both players*/
+.player {
+  flex: 50%;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+/* Left player's section color */
+.player-0 {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+/* Round header */
+.round {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1%;
+  color: #fff;
+}
+
+/* Points header */
+.score {
+  margin-bottom: 2rem;
+}
+
+/* Make a pick text */
+.pick-text {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+/* Left player's choice's div*/
+.picks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* Flex items */
+.pick-item {
+  padding: 1rem;
+}
+
+.pick-item:hover {
+  opacity: 0.6;
+}
+
+/* Hearts */
+i {
+  font-size: 3rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Questionmark div */
+.question {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-60%);
+}
+
+/* Questionmark image */
+.question img {
+  width: 20rem;
+  height: 20rem;
+}
+
+/* Play again button */
+button {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1.5%;
+  border-radius: 15px;
+  border: none;
+  font-size: 2rem;
+  background-color: royalblue;
+  color: #fff;
+  padding: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+button:hover {
+  opacity: 0.8;
+  color: #000;
+  font-weight: bold;
+  transition: all 0.6s ease-in-out;
+}
+
+.end-game-message {
+  font-family: inherit;
+  font-size: 4rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hidden {
+  display: none;
+}
