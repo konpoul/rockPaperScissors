@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 * {
   margin: 0;
@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
   height: 100vh;
   color: #333;
@@ -143,12 +143,14 @@ button:hover {
   transition: all 0.6s ease-in-out;
 }
 
-.end-game-message {
+.result-message {
   font-family: inherit;
-  font-size: 4rem;
+  font-size: 2rem;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 49%;
+  top: 5%;
+  color: white;
+  font-weight: bold;
 }
 
 .hidden {
