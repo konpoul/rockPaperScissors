@@ -80,6 +80,7 @@ img {
   word-spacing: 1px;
   font-weight: 300;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 /* Left player's choice's div*/
@@ -147,12 +148,36 @@ button:hover {
   font-family: inherit;
   font-size: 2rem;
   position: absolute;
-  left: 49%;
-  top: 5%;
+  left: 50%;
+  top: 6%;
+  transform: translate(-50%);
   color: white;
   font-weight: bold;
 }
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 768px) {
+  main > section.player {
+    padding: 1rem;
+  }
+  section.player h3 {
+    font-size: 1.3rem;
+  }
+  main i {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+  main h2 {
+    font-size: 1.5rem;
+  }
+  main .question {
+    transform: translateY(-166px);
+  }
+  main .question .quest {
+    height: 15rem;
+    width: 15rem;
+  }
 }
