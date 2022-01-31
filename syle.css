@@ -27,7 +27,7 @@ body {
 main {
   position: relative;
   width: 100rem;
-  height: 80rem;
+  /* height: 100vh; */
   border-radius: 11px;
   overflow: hidden;
   display: flex;
@@ -160,6 +160,9 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+  main {
+    height: 100vh;
+  }
   main > section.player {
     padding: 1rem;
   }
@@ -174,10 +177,60 @@ button:hover {
     font-size: 1.5rem;
   }
   main .question {
-    transform: translateY(-166px);
+    transform: translateY(-141px);
   }
   main .question .quest {
     height: 15rem;
     width: 15rem;
+  }
+}
+
+@media (max-height: 720px) {
+  i {
+    margin-bottom: 0;
+    padding-top: 0rem;
+  }
+  .pick-item {
+    padding: 0;
+  }
+  .score {
+    margin-bottom: 0rem;
+  }
+  /* main .question .quest {
+    height: 11rem;
+    width: 11rem; */
+}
+.pick-text {
+  margin-bottom: 0;
+}
+
+@media (max-height: 540px) {
+  main img {
+    height: 15rem;
+    width: 15rem;
+  }
+  i {
+    font-size: 2.2rem;
+    padding-bottom: 0rem;
+  }
+  main .question .quest {
+    margin-top: 9rem;
+  }
+  .pick-text {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-height: 420px) {
+  .picks {
+    flex-direction: row;
+    margin-top: 8rem;
+  }
+  main img {
+    padding: 2rem 0.5rem 1rem;
+  }
+
+  .result-message {
+    margin-top: 2rem;
   }
 }
