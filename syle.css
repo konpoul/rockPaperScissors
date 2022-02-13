@@ -7,8 +7,6 @@
 }
 
 html {
-  /* (62.5/100)*16 --> 16 are the default pixels. 
-  Used it for easier calculations */
   font-size: 62.5%;
   box-sizing: border-box;
 }
@@ -26,13 +24,12 @@ body {
 
 main {
   position: relative;
-  width: 100rem;
-  /* height: 100vh; */
-  border-radius: 11px;
+  width: 100vw;
+  border-radius: 1.1rem;
   overflow: hidden;
   display: flex;
   background-color: rgba(255, 255, 255, 0.35);
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 img {
@@ -76,10 +73,10 @@ img {
 .pick-text {
   font-size: 2rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  word-spacing: 1px;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.1rem;
   font-weight: 300;
-  margin-bottom: 1rem;
+  margin-bottom: 0.1rem;
   text-align: center;
 }
 
@@ -126,7 +123,7 @@ button {
   left: 50%;
   transform: translateX(-50%);
   bottom: 1.5%;
-  border-radius: 15px;
+  border-radius: 1.5rem;
   border: none;
   font-size: 2rem;
   background-color: royalblue;
@@ -177,7 +174,7 @@ button:hover {
     font-size: 1.5rem;
   }
   main .question {
-    transform: translateY(-141px);
+    transform: translateY(-14.1rem);
   }
   main .question .quest {
     height: 15rem;
